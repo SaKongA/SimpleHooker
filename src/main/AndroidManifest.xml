@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        tools:targetApi="31" >
+        <!-- 是否为Xposed模块 -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true"/>
+        <!-- 模块的简介（在框架中显示） -->
+        <meta-data
+            android:name="xposeddescription"
+            android:value="精简你的华为运动健康APP@SaKongA" />
+        <!-- 模块最低支持的Api版本 一般填54即可 -->
+        <meta-data
+            android:name="xposedminversion"
+            android:value="54"/>
+        <!-- 模块作用域 -->
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposedscope"/>
+    </application>
+
+</manifest>
