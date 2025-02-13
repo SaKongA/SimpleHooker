@@ -18,6 +18,6 @@ class MainHook : IXposedHookLoadPackage {
 
         BottomTabs.hideMemberButton(lpparam)
 
-        LayoutRemover.hookLayoutRemoval(lpparam)
+        LayoutRemover.hookLayoutRemoval()
     }
 }

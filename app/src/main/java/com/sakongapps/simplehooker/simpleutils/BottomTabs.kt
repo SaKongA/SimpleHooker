@@ -34,12 +34,6 @@ object BottomTabs {
                         val bottomNavItemView = param.thisObject as View
                         bottomNavItemView.visibility = View.GONE
                     }
-                    if (menuItem?.title == "运动") {
-                        XposedBridge.log("Found '运动' menu item, hiding BottomNavigationItemView")
-                        // 隐藏整个 BottomNavigationItemView
-                        val bottomNavItemView = param.thisObject as View
-                        bottomNavItemView.visibility = View.GONE
-                    }
                 }
             }
         )
